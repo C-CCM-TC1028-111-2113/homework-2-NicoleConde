@@ -1,7 +1,14 @@
-def main():
-    #escribe tu código abajo de esta línea
-    pass
+numbers = []
+
+for i in range(3):
+  num = float(input("Enter the number #{}: ".format(i + 1)))
+  numbers.append(num)
 
 
-if __name__=='__main__':
-    main()
+higher = numbers[0]
+
+for num in numbers:
+    if num > higher:
+        higher = num
+
+print("Higher: ", higher)

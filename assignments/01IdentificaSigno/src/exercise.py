@@ -1,8 +1,8 @@
 import math
-def main():
-    #escribe tu código abajo de esta línea
-    pass
-    
-
-if __name__ == '__main__':
-    main()
+num = int(input("Give me a number: "))
+if num < 0:
+    print("Is negative")
+elif num == 0:
+    print ("Is zero")
+else:
+    print("Is positive")

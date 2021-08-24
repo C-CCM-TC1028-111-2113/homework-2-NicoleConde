@@ -1,8 +1,9 @@
+age = int(input("Enter your age: "))
+id = input("Do you have identification? ")
 
-def main():
-    #Escribe tu código debajo de esta línea
-    pass
-
-
-if __name__ == '__main__':
-    main()
+if age == 18 and id == 'yes':
+ print("Licensing procedure granted.")
+elif (age < 18 and age >= 0) or id == 'no':
+ print ("You don´t meet the requirements.")
+else:
+ print ("Wrong answer.")
